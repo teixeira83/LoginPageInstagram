@@ -1,0 +1,130 @@
+ body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.ig-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100vh;
+}
+
+.profile-photo {
+    margin-top: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-photo img {
+    height: 6rem;
+    margin-bottom: -20px;
+}
+
+.ig-logo {
+    height: 5rem;
+    margin-bottom: 0;
+}
+
+.ig-continue {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+
+.ig-login {
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-bottom: -20px;
+}
+
+.ig-logout {
+    color: #0095f6;
+    margin-top: -20px;
+    text-decoration: none;
+}
+
+.link-blue {
+    color: #0095f6
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app-download {
+    width: 12rem;
+    height: 4rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('./imgs/apple.png');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('./imgs/playstore.png');
+}
+
+@media (max-width: 1024px) {
+    .ig-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    .ig-wrapper {
+        width: 90%;
+    }
+
+    .ig-phone {
+        display: none;
+    }
+
+    .ig-continue {
+        width: 100%;
+    }
+
+    .group {
+        border: 0;
+    }
+}
